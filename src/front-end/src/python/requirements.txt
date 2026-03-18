@@ -1,0 +1,13 @@
+pytesseract
+colorthief
+opencv-python
+Pillow
+onnxruntime
+fast-plate-ocr
+open-image-models
+fastapi
+uvicorn
+python-multipart
+scikit-learn
+numpy
+
