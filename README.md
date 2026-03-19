@@ -86,6 +86,11 @@ predicted_color = model.predict([avg_color])[0]
 
 Using KNN k=1 on the average RGB is intentional: it's deterministic, has no hyperparameters to tune, and mapping an average color to a name is essentially a nearest-neighbor search in perceptual space. The color dictionary is kept in sync with the frontend's `colorMap`, which guarantees that every name returned by the API always has a visual representation in the UI.
 
+<div align="center">
+<img src="./src/front-end/public/media/video_demostration.gif" width="800" height="800" alt="Demo"/>
+</div>
+
+
 ### Next.js integration
 
 The proxy at `/api/recognize-plates/route.ts` receives the `FormData` from the browser, forwards it as a `Blob` to the Python microservice, and returns the JSON directly to the client.
